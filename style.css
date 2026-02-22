@@ -6,13 +6,15 @@
 }
 
 body {
+  color: #f1f5f9;
+  background-color: #0f172a;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
 /* Navbar */
 header {
-  background-color: #333;
+  margin-bottom: 10px;
   color: white;
   padding: 20px 0;
 }
@@ -31,7 +33,8 @@ header nav {
 }
 
 header nav ul {
-  list-style: none;
+ 
+  list-style:none;
   display: flex;
 }
 
@@ -48,20 +51,28 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+header nav a:hover{
+  background-color: #3b82f6;
+}
+
 /* Hero */
 #hero {
+  margin:10px;
+  background-color: #1e293b;
   padding: 60px;
   text-align: center;
-  background-color: #f4f4f4;
 }
 
 /* About */
 #about {
   margin:10px;
  font-size: larger;
-  background-color: aqua;
+  background-color:#1e293b;
   padding: 40px;
   text-align: left;
+}
+#about:hover {
+  background-color:#3b82f6;
 }
 
 #about img {
@@ -75,8 +86,11 @@ header nav ul li a:hover {
   margin: 10px;
  font-size: larger;
   padding: 40px;
-  background-color: aqua;
+  background-color:#1e293b;
   text-align: left;
+}
+#projects:hover {
+  background-color:#3b82f6;
 }
 
 .project-container {
@@ -87,7 +101,7 @@ header nav ul li a:hover {
 }
 
 .project {
-  background: orange;
+  background: rgb(55, 55, 160);
   padding: 20px;
   width: 250px;
   border-radius: 5px;
@@ -101,21 +115,25 @@ header nav ul li a:hover {
 .project a {
   display: inline-block;
   margin-top: 10px;
-  color: #333;
+  color: grey;
   text-decoration: none;
 }
 
 .project a:hover {
   text-decoration: underline;
+
 }
 
 /* Skills */
 #skills {
  font-size: larger;
-  background-color: aqua;
+  background-color:#1e293b;
   padding: 40px;
   margin: 10px;
   text-align: left;
+}
+#skills:hover {
+  background-color:#3b82f6;
 }
 
 #skills ul {
@@ -128,13 +146,19 @@ header nav ul li a:hover {
 
 /* Contact */
 #contact {
+  font-size: larger;
+  background-color:#1e293b;
+  margin: 10px;
   padding: 40px;
-  text-align: center;
+  text-align: left;
+}
+#contact:hover {
+  background-color:#3b82f6;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #0f172a;
   color: white;
   padding: 20px;
   text-align: center;

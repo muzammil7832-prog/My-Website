@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+header nav img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+#hero {
+  padding: 60px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+/* About */
+#about {
+  margin:10px;
+ font-size: larger;
+  background-color: aqua;
+  padding: 40px;
+  text-align: left;
+}
+
+#about img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* Projects */
+#projects {
+  margin: 10px;
+ font-size: larger;
+  padding: 40px;
+  background-color: aqua;
+  text-align: left;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background: orange;
+  padding: 20px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Skills */
+#skills {
+ font-size: larger;
+  background-color: aqua;
+  padding: 40px;
+  margin: 10px;
+  text-align: left;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Contact */
+#contact {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+}

@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: #f1f5f9;
@@ -11,6 +14,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
 
 /* Navbar */
 header {
@@ -47,12 +51,30 @@ header nav ul li a {
   text-decoration: none;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
 }
 
-header nav a:hover{
+header nav ul li a:hover {
   background-color: #3b82f6;
+}
+#about,
+#projects,
+#skills,
+#contact {
+  transition: 0.3s ease;
+}
+
+#about:hover,
+#projects:hover,
+#skills:hover,
+#contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* Hero */
@@ -61,6 +83,26 @@ header nav a:hover{
   background-color: #1e293b;
   padding: 60px;
   text-align: center;
+}
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+#hero a {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#hero a:hover {
+  background-color: #2563eb;
 }
 
 /* About */
@@ -71,9 +113,7 @@ header nav a:hover{
   padding: 40px;
   text-align: left;
 }
-#about:hover {
-  background-color:#3b82f6;
-}
+
 
 #about img {
   width: 150px;
@@ -89,9 +129,7 @@ header nav a:hover{
   background-color:#1e293b;
   text-align: left;
 }
-#projects:hover {
-  background-color:#3b82f6;
-}
+
 
 .project-container {
   display: flex;
@@ -101,10 +139,16 @@ header nav a:hover{
 }
 
 .project {
-  background: rgb(55, 55, 160);
+  background: #1e293b;
   padding: 20px;
   width: 250px;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
 .project img {
@@ -130,15 +174,17 @@ header nav a:hover{
   background-color:#1e293b;
   padding: 40px;
   margin: 10px;
-
   text-align: left;
 }
-#skills:hover {
-  background-color:#3b82f6;
+
+#skills ul li {
+  background: #334155;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
 #skills ul {
- 
   list-style: none;
   display: flex;
   justify-content: center;
@@ -154,8 +200,8 @@ header nav a:hover{
   padding: 40px;
   text-align: left;
 }
-#contact:hover {
-  background-color:#3b82f6;
+#contact div{
+  text-align: center;
 }
 
 /* Footer */
@@ -174,6 +220,7 @@ footer {
   }
 
   header nav {
+    gap: 15px;
     flex-direction: column;
   }
 

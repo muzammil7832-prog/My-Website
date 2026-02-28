@@ -155,7 +155,8 @@ header nav ul li a:hover {
 }
 
 .project #pjt1 {
-  border-radius=6px;
+  padding:5px 8px;
+  border-radius:6px;
  background-color:transparent;
   display: inline-block;
   margin-top: 10px;
@@ -232,6 +233,7 @@ footer {
     margin: 5px 0;
   }
 }
+
 
 
 

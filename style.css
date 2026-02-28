@@ -155,6 +155,8 @@ header nav ul li a:hover {
 }
 
 .project a {
+  border-radius=6px;
+ background-color:transparent;
   display: inline-block;
   margin-top: 10px;
   color: grey;
@@ -162,7 +164,7 @@ header nav ul li a:hover {
 }
 
 .project a:hover {
-  text-decoration: underline;
+  background-color: #2563eb;
 
 }
 .project #project-1{
@@ -230,6 +232,7 @@ footer {
     margin: 5px 0;
   }
 }
+
 
 
 

@@ -155,7 +155,6 @@ header nav ul li a:hover {
 }
 
 .project a {
-  text-align: center;
   display: inline-block;
   margin-top: 10px;
   color: grey;
@@ -165,6 +164,9 @@ header nav ul li a:hover {
 .project a:hover {
   text-decoration: underline;
 
+}
+.project #project-1{
+  text-align:center;
 }
 
 /* Skills */
@@ -228,5 +230,6 @@ footer {
     margin: 5px 0;
   }
 }
+
 
 

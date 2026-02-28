@@ -155,6 +155,7 @@ header nav ul li a:hover {
 }
 
 .project a {
+  text-align: center;
   display: inline-block;
   margin-top: 10px;
   color: grey;
@@ -227,4 +228,5 @@ footer {
     margin: 5px 0;
   }
 }
+
 
